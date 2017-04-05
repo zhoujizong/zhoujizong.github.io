@@ -1,0 +1,697 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="data,analysis," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="往往我们谈到数据分析，或者说想要从事数据分析工作，自然而然地，我们首先会想到R,Python等编程语言，亦或是决策树，神经网络等分析算法。在大数据概念火热的年代，”啤酒与尿布”的神话给数据分析披上了一层高贵的面纱。然而在我看来，数据分析并非如此高贵冷艳，人人都可以成为数据分析师，因为我们追寻本质，数据分析无非就是解决问题的一个途径罢了。而最终影响你的高度的，可能是你对这个行业的理解深度，也就是你对">
+<meta property="og:type" content="article">
+<meta property="og:title" content="写在数据分析最前面">
+<meta property="og:url" content="http://yoursite.com/2017/04/05/写在数据分析最前面/index.html">
+<meta property="og:site_name" content="mymind">
+<meta property="og:description" content="往往我们谈到数据分析，或者说想要从事数据分析工作，自然而然地，我们首先会想到R,Python等编程语言，亦或是决策树，神经网络等分析算法。在大数据概念火热的年代，”啤酒与尿布”的神话给数据分析披上了一层高贵的面纱。然而在我看来，数据分析并非如此高贵冷艳，人人都可以成为数据分析师，因为我们追寻本质，数据分析无非就是解决问题的一个途径罢了。而最终影响你的高度的，可能是你对这个行业的理解深度，也就是你对">
+<meta property="og:updated_time" content="2017-04-05T07:20:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="写在数据分析最前面">
+<meta name="twitter:description" content="往往我们谈到数据分析，或者说想要从事数据分析工作，自然而然地，我们首先会想到R,Python等编程语言，亦或是决策树，神经网络等分析算法。在大数据概念火热的年代，”啤酒与尿布”的神话给数据分析披上了一层高贵的面纱。然而在我看来，数据分析并非如此高贵冷艳，人人都可以成为数据分析师，因为我们追寻本质，数据分析无非就是解决问题的一个途径罢了。而最终影响你的高度的，可能是你对这个行业的理解深度，也就是你对">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/04/05/写在数据分析最前面/"/>
+
+
+
+
+
+  <title> 写在数据分析最前面 | mymind </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">mymind</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/05/写在数据分析最前面/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="eric">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head1.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mymind">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                写在数据分析最前面
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-05T15:07:21+08:00">
+                2017-04-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>往往我们谈到数据分析，或者说想要从事数据分析工作，自然而然地，我们首先会想到R,Python等编程语言，亦或是决策树，神经网络等分析算法。在大数据概念火热的年代，”啤酒与尿布”的神话给数据分析披上了一层高贵的面纱。然而在我看来，数据分析并非如此高贵冷艳，人人都可以成为数据分析师，因为我们追寻本质，数据分析无非就是<strong><strong>解决问题</strong></strong>的一个途径罢了。而最终影响你的高度的，可能是你对这个行业的理解深度，也就是你对这个行业的问题的理解深度。所以写在数据分析最前面，我认为我们始终要聚焦到以下几点：</p>
+<ul>
+<li>面向什么用户什么场景，遇到了什么问题</li>
+<li>需要用到什么样的数据</li>
+<li>对数据进行了怎样的处理和分析</li>
+<li>通过数据得到了什么结论</li>
+<li>得到的结论带来了什么价值</li>
+</ul>
+<a id="more"></a>
+<h3 id="面向什么用户什么场景，遇到了什么问题"><a href="#面向什么用户什么场景，遇到了什么问题" class="headerlink" title="面向什么用户什么场景，遇到了什么问题"></a>面向什么用户什么场景，遇到了什么问题</h3><p>问题是所有事情的出发点，假如连问题都没有弄清楚，那么去做怎样的分析，都是没有意义的，可能最后的结果毫无价值，而你的工作也变为了徒劳。所以我们要在问题的开始就明确用户是谁，在什么场景，问题是什么。</p>
+<p>至此，我们基本完成了初步的问题定位。但是作为一个数据分析师，你要做的还有更多。进一步地，你需要将这个问题抽象化，并且归类，看看是否能够成为某一类问题的通用形势。而自然的，对于某一类的问题，你从一开始就在慢慢积累你的解决方法了,你所要做的就是从你的解法库里面去找或者用新的解法并更新你的解法库。</p>
+<p>另外，主动去发现问题，这点很重要。主动去发现问题，主动去发现问题，主动去发现问题，重要的事情说三遍。</p>
+<h3 id="需要用到什么样的数据"><a href="#需要用到什么样的数据" class="headerlink" title="需要用到什么样的数据"></a>需要用到什么样的数据</h3><p>如今你已经明确了问题，那么就可以进入主题了。<br>技术的进步使得我们有机会获得更细致的数据，有条件存储和处理更大量级的数据，有能力去获取更及时的数据，这是大数据带给我们最核心的东西。<br>然而数据的本质是没有发生改变的：<strong><strong>对某一类信息的量化</strong></strong>。而量化的信息，能够更客观地帮助我们去进行判断。<br>所以问题明确好了之后，需要明确我们想要的信息，该如何量化成数据或者说某种指标？我们的数据基础是否可以支持我们进行这样的量化？如果不可以那么有没有替代的量化方法？想清楚了这些，再动手获取数据不迟。而获取数据的方法，这里不展开。</p>
+<p>另外，主动去接触数据，弄清楚每一个数据是怎么产生的，含义是什么，这点也很重要。</p>
+<h3 id="对数据进行了怎样的处理和分析"><a href="#对数据进行了怎样的处理和分析" class="headerlink" title="对数据进行了怎样的处理和分析"></a>对数据进行了怎样的处理和分析</h3><p>明确了问题，准备好了数据，终于要到数据分析的环节啦。但是如果你想看到各种屠龙之术，那恐怕就要失望了，因为我们在这里不细讲，因为每一个都能讲一大章，我会在之后的文章中具体去展开。</p>
+<p>我们还是讲分析的目的。对比分析我们能够直观看到问题，细分分析可以定位更细致的问题，相关性分析我们可以看到两个事情之间的联系，因果分析可以找到两个事情的因果关系。我们分析的目的，就是为了挖掘数据告诉我们的信息。</p>
+<h3 id="通过数据得到了什么结论"><a href="#通过数据得到了什么结论" class="headerlink" title="通过数据得到了什么结论"></a>通过数据得到了什么结论</h3><p>通过数据分析我们获取了大量信息，有些有用，有些无用。至今为止，这些结论只有你一个人知道，而如果要传播你的劳动成果，你需要提炼概括得到结论。将数据的语言，转化为你的用户所熟悉的语言。</p>
+<p>另外，主动沟通，这点很重要。每个人受限于自己以往的经验，对于事物的认知和理解能力不同，所以要主动沟通，换位思考，你会有不一样的收获的。</p>
+<h3 id="得到的结论带来了什么价值"><a href="#得到的结论带来了什么价值" class="headerlink" title="得到的结论带来了什么价值"></a>得到的结论带来了什么价值</h3><p>作为数据分析师，我们的工作差不多就快结束了。最后需要关注的是，我们的工作得到的结论，带来了什么价值？带来的价值能否扩大化？我想谁也不愿意去做一件没有价值的事情，对吧？</p>
+<p>所以没有价值的事情，下次在问题明确的时候，就不要做了吧！有价值的事情，想想如何获得更大的价值吧！</p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>所以你看，数据分析，并不是简单的对数据进行提取和分析而已，也不仅仅是编程语言或者说分析方法而已。这些固然都是极其重要的，但是最终能带来价值的东西，核心还是在<strong><strong>数据本身（丰富，可靠）</strong></strong>以及<strong><strong>解决了什么问题</strong></strong>而已。所以写在最前面，是想要提醒自己，在专注coding和algorithm的时候，能够不忘初心。愿你习得屠龙之术，更愿你屠龙～</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/data/" rel="tag"># data</a>
+          
+            <a href="/tags/analysis/" rel="tag"># analysis</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/03/成长的开始/" rel="next" title="成长的开始">
+                <i class="fa fa-chevron-left"></i> 成长的开始
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/head1.png"
+               alt="eric" />
+          <p class="site-author-name" itemprop="name">eric</p>
+           
+              <p class="site-description motion-element" itemprop="description">是态度决定一切</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#面向什么用户什么场景，遇到了什么问题"><span class="nav-number">1.</span> <span class="nav-text">面向什么用户什么场景，遇到了什么问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#需要用到什么样的数据"><span class="nav-number">2.</span> <span class="nav-text">需要用到什么样的数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对数据进行了怎样的处理和分析"><span class="nav-number">3.</span> <span class="nav-text">对数据进行了怎样的处理和分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过数据得到了什么结论"><span class="nav-number">4.</span> <span class="nav-text">通过数据得到了什么结论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#得到的结论带来了什么价值"><span class="nav-number">5.</span> <span class="nav-text">得到的结论带来了什么价值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结语"><span class="nav-number">6.</span> <span class="nav-text">结语</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">eric</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
