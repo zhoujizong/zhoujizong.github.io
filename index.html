@@ -250,6 +250,197 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/16/feature-test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Eric">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head1.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mymind">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/06/16/feature-test/" itemprop="url">
+                  特征值检验
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-16T15:31:56+08:00">
+                2017-06-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="特征检验"><a href="#特征检验" class="headerlink" title="特征检验"></a>特征检验</h2><h3 id="卡方检验"><a href="#卡方检验" class="headerlink" title="卡方检验"></a>卡方检验</h3><table>
+<thead>
+<tr>
+<th>特征/结果</th>
+<th>R</th>
+<th>非R</th>
+<th>总计</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>a</td>
+<td>b</td>
+<td>a+b</td>
+</tr>
+<tr>
+<td>非A</td>
+<td>c</td>
+<td>d</td>
+<td>c+d</td>
+</tr>
+<tr>
+<td>总计</td>
+<td>a+c</td>
+<td>b+d</td>
+<td>a+b+c+d</td>
+</tr>
+</tbody>
+</table>
+<p>令样本数N=a+b+c+d</p>
+<p>假设A与R无关，即A＝非A</p>
+<p>则R的概率应该是(a+c)/N</p>
+<p>那么得到期望：</p>
+<table>
+<thead>
+<tr>
+<th>特征/结果</th>
+<th>R</th>
+<th>非R</th>
+<th>总计</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>(a+c)/N*(a+b)</td>
+<td>(b+d)/N*(a+b)</td>
+<td>a+b</td>
+</tr>
+<tr>
+<td>非A</td>
+<td>(a+c)/N*(c+d)</td>
+<td>(b+d)/N*(c+d)</td>
+<td>c+d</td>
+</tr>
+<tr>
+<td>总计</td>
+<td>a+c</td>
+<td>b+d</td>
+<td>a+b+c+d</td>
+</tr>
+</tbody>
+</table>
+<p>根据卡方检验的公式: </p>
+<pre><code>D = ( ∑(E1-E0)² )/E0，E1是实际值，E0是理论值（期望值）
+</code></pre><p>D越大（A,R）越相关，D越小(A,R)越不相关</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/06/16/feature-test/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/20/wordcloud_with_py/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -811,7 +1002,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
