@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="data,tech," />
+  <meta name="keywords" content="business," />
 
 
 
@@ -87,39 +87,31 @@
 
 
 
-<meta name="description" content="主要工具
-python 2.7
-jieba分词
-wordcloud绘制词云
+<meta name="description" content="一.目前的内容电商说起内容电商，目前主流的内容电商主要分为两类：
 
-github 地址
-https://github.com/fxsjy/jieba/
-https://github.com/amueller/word_cloud/tree/master/wordcloud">
+以精选内容为主，通过社区的形式引导一部分用户产生内容，普通用户对于一部分商品知识有获取的需要，进一步引导转化。比如小红书。
+以IP为主，通过内容让用户对IP产生信任，满足用户获取知识的需要，基于对IP的信任完成转。比如年糕妈妈。
+
+淘宝从很早之前就开始做内容电商，最早的淘女郎，现在的微淘，都是为了满足用户逛的需求。其理念是，用户把">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python实现词云绘制">
-<meta property="og:url" content="http://yoursite.com/2017/04/20/wordcloud_with_py/index.html">
+<meta property="og:title" content="内容电商相关">
+<meta property="og:url" content="http://yoursite.com/2018/12/17/content-business/index.html">
 <meta property="og:site_name" content="Mymind">
-<meta property="og:description" content="主要工具
-python 2.7
-jieba分词
-wordcloud绘制词云
+<meta property="og:description" content="一.目前的内容电商说起内容电商，目前主流的内容电商主要分为两类：
 
-github 地址
-https://github.com/fxsjy/jieba/
-https://github.com/amueller/word_cloud/tree/master/wordcloud">
-<meta property="og:image" content="http://yoursite.com/img/1.png">
-<meta property="og:updated_time" content="2017-04-21T02:35:45.000Z">
+以精选内容为主，通过社区的形式引导一部分用户产生内容，普通用户对于一部分商品知识有获取的需要，进一步引导转化。比如小红书。
+以IP为主，通过内容让用户对IP产生信任，满足用户获取知识的需要，基于对IP的信任完成转。比如年糕妈妈。
+
+淘宝从很早之前就开始做内容电商，最早的淘女郎，现在的微淘，都是为了满足用户逛的需求。其理念是，用户把">
+<meta property="og:updated_time" content="2019-01-30T07:03:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python实现词云绘制">
-<meta name="twitter:description" content="主要工具
-python 2.7
-jieba分词
-wordcloud绘制词云
+<meta name="twitter:title" content="内容电商相关">
+<meta name="twitter:description" content="一.目前的内容电商说起内容电商，目前主流的内容电商主要分为两类：
 
-github 地址
-https://github.com/fxsjy/jieba/
-https://github.com/amueller/word_cloud/tree/master/wordcloud">
-<meta name="twitter:image" content="http://yoursite.com/img/1.png">
+以精选内容为主，通过社区的形式引导一部分用户产生内容，普通用户对于一部分商品知识有获取的需要，进一步引导转化。比如小红书。
+以IP为主，通过内容让用户对IP产生信任，满足用户获取知识的需要，基于对IP的信任完成转。比如年糕妈妈。
+
+淘宝从很早之前就开始做内容电商，最早的淘女郎，现在的微淘，都是为了满足用户逛的需求。其理念是，用户把">
 
 
 
@@ -147,13 +139,13 @@ https://github.com/amueller/word_cloud/tree/master/wordcloud">
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/04/20/wordcloud_with_py/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/12/17/content-business/"/>
 
 
 
 
 
-  <title> python实现词云绘制 | Mymind </title>
+  <title> 内容电商相关 | Mymind </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -272,7 +264,7 @@ https://github.com/amueller/word_cloud/tree/master/wordcloud">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/20/wordcloud_with_py/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/17/content-business/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Eric">
@@ -293,7 +285,7 @@ https://github.com/amueller/word_cloud/tree/master/wordcloud">
             
             
               
-                python实现词云绘制
+                内容电商相关
               
             
           </h1>
@@ -308,8 +300,8 @@ https://github.com/amueller/word_cloud/tree/master/wordcloud">
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-20T11:33:02+08:00">
-                2017-04-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-17T13:54:24+08:00">
+                2018-12-17
               </time>
             
 
@@ -344,65 +336,43 @@ https://github.com/amueller/word_cloud/tree/master/wordcloud">
       
 
       
-        <h3 id="主要工具"><a href="#主要工具" class="headerlink" title="主要工具"></a>主要工具</h3><ul>
-<li>python 2.7</li>
-<li>jieba分词</li>
-<li>wordcloud绘制词云</li>
+        <h2 id="一-目前的内容电商"><a href="#一-目前的内容电商" class="headerlink" title="一.目前的内容电商"></a>一.目前的内容电商</h2><p>说起内容电商，目前主流的内容电商主要分为两类：</p>
+<ul>
+<li>以精选内容为主，通过社区的形式引导一部分用户产生内容，普通用户对于一部分商品知识有获取的需要，进一步引导转化。比如小红书。</li>
+<li>以IP为主，通过内容让用户对IP产生信任，满足用户获取知识的需要，基于对IP的信任完成转。比如年糕妈妈。</li>
 </ul>
-<h4 id="github-地址"><a href="#github-地址" class="headerlink" title="github 地址"></a>github 地址</h4><ul>
-<li><a href="https://github.com/fxsjy/jieba/" target="_blank" rel="external">https://github.com/fxsjy/jieba/</a></li>
-<li><a href="https://github.com/amueller/word_cloud/tree/master/wordcloud" target="_blank" rel="external">https://github.com/amueller/word_cloud/tree/master/wordcloud</a></li>
+<p>淘宝从很早之前就开始做内容电商，最早的淘女郎，现在的微淘，都是为了满足用户逛的需求。其理念是，用户把时间花在这里了，总会买东西的。如果非要归类，我会把他归为第二类，用户基于对商家或品牌的信任，获取内容和购买商品。</p>
+<h2 id="二-字节系的内容"><a href="#二-字节系的内容" class="headerlink" title="二.字节系的内容"></a>二.字节系的内容</h2><p>目前字节系的产品，是很纯粹的内容产品基因，无论是头条还是抖音，其特点都是依靠内容本身吸引流量。<br>所以结果上来看（粉丝触达率10%），IP概念比较弱，第二条路子天然不好走。<br>而第一条路子，抖音是一个泛娱乐场景，头条是一个资讯场景，交易的属性天然就很弱。结果上来看的问题便是转化率低，即使流量很大最后成单也有限。进一步地，作为达人商品相关的内容创作意愿度不高，作为商家创作成本高ROI低，不能持续产出优质的商品内容。</p>
+<h2 id="三-用户对于消费商品内容的真实需求"><a href="#三-用户对于消费商品内容的真实需求" class="headerlink" title="三.用户对于消费商品内容的真实需求"></a>三.用户对于消费商品内容的真实需求</h2><p>我们深陷局中，总以为我们有流量，总以为我们有内容，其实我们最缺精准流量，最缺电商优质内容。而其实我们应该跳出来，对于商品内容，用户真正需要的是什么，内容对于用户购物解决什么问题。对于商品相关内容，我认为主要有以下几类信息是用户需要的。</p>
+<ul>
+<li>好看–对于美丽的需求–服饰、美妆</li>
+<li>好吃–对于好吃的需求（味觉&amp;健康）–生鲜、零食、养生食品</li>
+<li>好用–对于便捷的需求–百货</li>
+<li>好玩–对于新鲜的需求–新奇特</li>
+<li>知识–对于自我提升的需求–虚拟产品</li>
+<li>便宜–对于金钱的需求–标准品类</li>
 </ul>
-<a id="more"></a>
-<h4 id="工具安装"><a href="#工具安装" class="headerlink" title="工具安装"></a>工具安装</h4><ul>
-<li>pip install jieba</li>
-<li>pip install wordcloud</li>
-<li>也可以下载文件后运行setup.py进行安装</li>
+<p>根据马斯洛的需求理论，越基础的需求共性越大，比如便宜，本质上是用户对财产安全的需求，是除了基础的生理需求外最大的需求。<br>所以微信中的几个品类，服饰、美妆、家居百货、食品，本质上切中的是用户的这几部分需求，只是传播的方式更多是通过社群，传播的内容会随意化一些。其本质都是利用了用户以上的某种需求，内容给予了用户信息增益。</p>
+<p>四.用户对于购买商品的真实需求<br>我们天然的以为，用户看了文章，会自然地去购买文章中的商品。但实际上，消费内容决策和购买决策是两个不同的环节。比如，关于iphone如何好用的内容，我有兴趣阅读，但是买不买，还取决于你的价格，你的服务，我的购买力，我对你的信任。所以用户对于购买商品的真实需求，并没有因为内容而改变。<br>形成一次购买的核心要素还是</p>
+<ul>
+<li>需求（用户真实的需求）</li>
+<li>信任（持续的服务能力）</li>
+<li>价格（价格在市场上的竞争力）</li>
+<li>购买力（用户的真实购买力）</li>
 </ul>
-<h3 id="example–以淘宝的差评为例"><a href="#example–以淘宝的差评为例" class="headerlink" title="example–以淘宝的差评为例"></a>example–以淘宝的差评为例</h3><h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>假如你是一个商家，想要看下自己店铺内的商品差评情况，来确定用户对本店商品不满意的点主要有哪些，针对性地去改进，那么我们可以通过对每一条差评进行分词提取关键词，然后再绘制一个词云，就可以很直观地看到用户不满意的key point了。</p>
-<h4 id="利用jieba分词对差评进行分词"><a href="#利用jieba分词对差评进行分词" class="headerlink" title="利用jieba分词对差评进行分词"></a>利用jieba分词对差评进行分词</h4><pre><code># -*- coding: utf-8 -*-
-import jieba.analyse
-
-#利用tf-idf算法的分词函数，输入文本和需要的top重要的关键词个数
-def cutting(content,topK):
-    tags = jieba.analyse.extract_tags(content, topK=topK)
-    return &apos;,&apos;.join(tags)
-
-file_name_r = open(&apos;./data/input_file&apos;,&apos;r&apos;)
-file_name_w = open(&apos;./data/output_file.txt&apos;,&apos;w&apos;)
-
-#print cutting(&apos;eric是个好孩子&apos;,2)
-
-for line in file_name_r:
-    line = line.decode(&apos;utf-8&apos;)
-    cutting_out_u = cutting(line,2)
-    cutting_out_s = cutting_out_u.encode(&apos;utf-8&apos;)
-    file_name_w.write(cutting_out_s+&apos;\n&apos;)
-
-file_name_r.close()
-file_name_w.close()
-</code></pre><h4 id="利用wordcloud对分词好的词绘制词云"><a href="#利用wordcloud对分词好的词绘制词云" class="headerlink" title="利用wordcloud对分词好的词绘制词云"></a>利用wordcloud对分词好的词绘制词云</h4><pre><code>import matplotlib.pyplot as plt
-from wordcloud import WordCloud
-import jieba
-
-text_from_file_with_apath = open(&apos;./data/output_file.txt&apos;).read()
-
-wordlist_after_jieba = jieba.cut(text_from_file_with_apath, cut_all = True)
-wl_space_split = &quot; &quot;.join(wordlist_after_jieba)
-
-my_wordcloud = WordCloud().generate(wl_space_split)
-
-plt.imshow(my_wordcloud)
-plt.axis(&quot;off&quot;)
-plt.show()
-</code></pre><h4 id="结果输出"><a href="#结果输出" class="headerlink" title="结果输出"></a>结果输出</h4><p><img src="/img/1.png" width="500" height="260" alt="cc" align="center"></p>
-<p>所以我们可以看到商品质量问题是首要问题，另外客服，物流次之。</p>
-<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><ol>
-<li>注意数据存储路径，我是放在当前目录的<strong>./data/</strong>下面</li>
-<li>注意中文编码问题，这个博主写的挺清楚的：<a href="http://www.cnblogs.com/baihuitestsoftware/articles/5230351.html" target="_blank" rel="external">http://www.cnblogs.com/baihuitestsoftware/articles/5230351.html</a></li>
-<li>wordcloud默认用的英文字体，所以我们在绘制中文词云的时候可能会出现一个个框，可以打开python包wordcloud的安装路径，我们直接看源码，wordcloud.py默认设置了:<br><strong>FONT_PATH = os.environ.get(“FONT_PATH”, os.path.join(os.path.dirname(<strong>file</strong>),”DroidSansMono.ttf”)</strong><br>把DroidSansMono.ttf更改为自己想要的字体即可。我用的是msyh.ttf，需要自己下载，放到你的脚本目录下。</li>
-<li>分词的算法以及词云的形状颜色均可配置，自己根据需要选择哈，本文因为是以基本实现词云绘制为主，所以不再拓展。                           </li>
-</ol>
+<p>所以从结果上来看，广义的内容电商（包含微商），卖的好的以非标品和相对价低的标准品为主。因为从内容到购买的衔接，衔接好的无外乎以下两类。</p>
+<p>内容有信息增益（变得好看／变得聪明，产生需求），商品非标（信息不对称）<br>内容传递的信息就是便宜，商品标准（信息对称）</p>
+<p>解决的都是需求和价格的问题，信任需要持续稳定的服务去积累（心智）</p>
+<h2 id="五-大值点的内容电商"><a href="#五-大值点的内容电商" class="headerlink" title="五.大值点的内容电商"></a>五.大值点的内容电商</h2><p>说了那么多，其实内容电商能做什么已经很清晰了。大值点的内容电商应该是基于整个字节跳动的内容生态（不再质疑），对电商内容的聚合和分发，并通过内容解决用户的某个共性需求，通过商品完成转化。分发态下的去中心化电商触发用户的某个需求，聚合态下的中心化场景集中解决用户某个需求。</p>
+<ul>
+<li>聚合共性需求的优质内容，并有机制可以持续产生（什么值得买／小红书／下厨房）</li>
+<li>能够产生优质内容并解决共性需求的达人，打造ip（蘑菇街）</li>
+<li>高性价比的标准品（天猫超市）<br>去中心化消费场景：非紧急购物需求，内容分发后的触发式购物<br>中心化消费场景：这里不只是购物，更是解决需求的地方<br>核心优势：用户的时间在这里，我有机会通过内容最先触达你<br>愿景：消除信息不对称，让原始需求和真实购买力碰撞</li>
+</ul>
+<h2 id="六-case"><a href="#六-case" class="headerlink" title="六.case"></a>六.case</h2><ul>
+<li>case1：抽纸作为家庭消费品，是家里日常需要的商品。我不会主动想起要去天猫买个纸（非缺失情况），但是头条抽纸做活动的信息触达我，我会选择点进去购买。</li>
+<li>case2：我想变得好看，我不会主动打开淘宝去看大量的商品然后购买，但是我看到抖音某个人的穿搭好看，我会选择点进去购买。</li>
+</ul>
 
       
     </div>
@@ -432,9 +402,7 @@ plt.show()
       
         <div class="post-tags">
           
-            <a href="/tags/data/" rel="tag"># data</a>
-          
-            <a href="/tags/tech/" rel="tag"># tech</a>
+            <a href="/tags/business/" rel="tag"># business</a>
           
         </div>
       
@@ -447,8 +415,8 @@ plt.show()
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/06/ka_shop_op/" rel="next" title="KA商家运营">
-                <i class="fa fa-chevron-left"></i> KA商家运营
+              <a href="/2018/10/29/think-of-pdd/" rel="next" title="对拼多多的十次思考">
+                <i class="fa fa-chevron-left"></i> 对拼多多的十次思考
               </a>
             
           </div>
@@ -456,10 +424,6 @@ plt.show()
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/06/16/feature-test/" rel="prev" title="特征值检验">
-                特征值检验 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -579,7 +543,7 @@ plt.show()
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#主要工具"><span class="nav-number">1.</span> <span class="nav-text">主要工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#github-地址"><span class="nav-number">1.1.</span> <span class="nav-text">github 地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#工具安装"><span class="nav-number">1.2.</span> <span class="nav-text">工具安装</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#example–以淘宝的差评为例"><span class="nav-number">2.</span> <span class="nav-text">example–以淘宝的差评为例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#背景"><span class="nav-number">2.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#利用jieba分词对差评进行分词"><span class="nav-number">2.2.</span> <span class="nav-text">利用jieba分词对差评进行分词</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#利用wordcloud对分词好的词绘制词云"><span class="nav-number">2.3.</span> <span class="nav-text">利用wordcloud对分词好的词绘制词云</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#结果输出"><span class="nav-number">2.4.</span> <span class="nav-text">结果输出</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意点"><span class="nav-number">3.</span> <span class="nav-text">注意点</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-目前的内容电商"><span class="nav-number">1.</span> <span class="nav-text">一.目前的内容电商</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-字节系的内容"><span class="nav-number">2.</span> <span class="nav-text">二.字节系的内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-用户对于消费商品内容的真实需求"><span class="nav-number">3.</span> <span class="nav-text">三.用户对于消费商品内容的真实需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五-大值点的内容电商"><span class="nav-number">4.</span> <span class="nav-text">五.大值点的内容电商</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六-case"><span class="nav-number">5.</span> <span class="nav-text">六.case</span></a></li></ol></div>
             
 
           </div>
